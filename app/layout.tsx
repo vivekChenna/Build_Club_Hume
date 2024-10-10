@@ -7,7 +7,7 @@ import { cn } from "@/utils";
 
 export const metadata: Metadata = {
   title: "Build Club | The Training Campus",
-  description: "A Next.js starter using Hume AI's Empathic Voice Interface",
+  description: "Andaihub and EVI integrated Empathatic bot",
 };
 
 export default function RootLayout({
