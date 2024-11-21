@@ -14,7 +14,7 @@ RUN npm install -g pnpm && pnpm install --frozen-lockfile
 COPY . .
 
 # Build the application
-RUN pnpm build
+# RUN pnpm build
 
 # Expose the Next.js default port
 EXPOSE 9080
