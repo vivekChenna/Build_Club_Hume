@@ -3,11 +3,11 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install
+RUN pnpm install
 
 COPY . .
 
-RUN npm run build
+RUN pnpm run build
 
 
 FROM node:18-alpine AS runner
@@ -18,4 +18,4 @@ COPY --from=builder /app/public ./public
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./
 
-CMD [ "npm", "run","dev" ]
+CMD [ "pnpm", "run","dev" ]
